@@ -1,0 +1,81 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#add {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 12px 24px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+#add:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+#add:active {
+  transform: translateY(0);
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  background: #ffffff;
+  flex: 1;
+  padding: 15px;
+  border-radius: 14px;
+  min-height: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.column:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.board-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.note {
+  background: #fef08a;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: grab;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+
+.note:active {
+  cursor: grabbing;
+}
+
+.note:hover {
+  background: #fde047;
+  transform: translateY(-2px);
+}
